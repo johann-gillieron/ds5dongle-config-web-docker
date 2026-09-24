@@ -1,5 +1,7 @@
 # DS5Dongle Config Web (Dockerized)
 
+[![Publish Docker Image](https://github.com/johann-gillieron/ds5dongle-config-web-docker/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/johann-gillieron/ds5dongle-config-web-docker/actions/workflows/docker-publish.yml)
+
 Dockerized version of https://github.com/awalol/ds5dongle-config-web by awalol.
 
 This image packages the complete web interface into a standalone Docker container, allowing you to run the application locally without depending on a permanent internet connection.
