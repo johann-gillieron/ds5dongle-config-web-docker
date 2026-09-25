@@ -1,9 +1,15 @@
-name: Publish Docker Image
+name: Build and Publish Docker Image
 
 on:
   push:
     branches: [ "main" ]
     tags: [ 'v*' ]
+
+env:
+  DS5DONGLECONFIGWEB_REPO: https://github.com/awalol/ds5dongle-config-web
+  DS5DONGLECONFIGWEB_BRANCH: master
+  DS5DONGLECONFIGWEB_REF: 73d412e61483f7809fd578421bd6f43de2cee094
+  
 
 jobs:
   push_to_registry:
