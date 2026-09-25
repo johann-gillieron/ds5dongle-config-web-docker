@@ -5,6 +5,9 @@ on:
     branches: [ "main" ]
     tags: [ 'v*' ]
 
+  schedule:
+    - cron: '0 0 1 */1 *' 
+
 env:
   DS5DONGLECONFIGWEB_REPO: awalol/ds5dongle-config-web
   DS5DONGLECONFIGWEB_BRANCH: master
