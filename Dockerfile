@@ -1,5 +1,5 @@
 # Use Node.js 22 image with Alpine Linux
-FROM node:22-alpine AS builder
+FROM node:24-alpine AS builder
 
 # Set working directory inside the container
 WORKDIR /app
