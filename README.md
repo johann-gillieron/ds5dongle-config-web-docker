@@ -25,7 +25,7 @@ services:
     container_name: ds5dongle-config-web
     restart: unless-stopped
     ports:
-      - "7000:80"
+      - "7000:443"
 ```
 
 Start the container:
@@ -37,7 +37,7 @@ docker compose up -d
 Open your browser and navigate to:
 
 ```text
-http://YOUR_DOCKER_HOST_IP:7000
+https://YOUR_DOCKER_HOST_IP:7000
 ```
 
 ## Docker Run
@@ -48,14 +48,14 @@ Start the container directly:
 docker run -d \
   --name ds5dongle-config-web \
   --restart unless-stopped \
-  -p 7000:80 \
+  -p 7000:443 \
   ghcr.io/johann-gillieron/ds5dongle-config-web-docker:latest
 ```
 
 Then open:
 
 ```text
-http://YOUR_DOCKER_HOST_IP:7000
+https://YOUR_DOCKER_HOST_IP:7000
 ```
 
 ## Updating
@@ -80,7 +80,7 @@ docker compose up -d
 
 ## Roadmap
 
-- [ ] GitHub Actions automated image build
+- [x] GitHub Actions automated image build
+- [x] Validate Docker image configuration
 - [ ] Automatic rebuild on upstream changes
 - [ ] Additional documentation and usage examples
-- [ ] Validate Docker image configuration
