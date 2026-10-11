@@ -9,6 +9,9 @@ RUN apk --no-cache add git
 
 RUN git clone https://github.com/awalol/ds5dongle-config-web.git /app/
 
+ARG UPSTREAM_SHA
+RUN echo "$UPSTREAM_SHA"
+
 RUN npm install
 RUN npm run build
 
